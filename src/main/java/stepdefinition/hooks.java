@@ -6,6 +6,15 @@ import io.cucumber.java.Before;
 import io.cucumber.java.BeforeStep;
 import io.cucumber.java.Scenario;
 import io.cucumber.plugin.event.Step;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class hooks extends context.util{
 
@@ -26,10 +35,15 @@ public class hooks extends context.util{
     }
 
     @After
-    public void afterScenarioActions(Scenario scenario){
+    public void afterScenarioActions(Scenario scenario) throws IOException {
         System.out.println("after scenario");
         System.out.println(scenario.getName());
         System.out.println("STATUS "+ scenario.getStatus());
+        if (scenario.isFailed()){
+            scenario.log("Failed! Please find attached screenshot");
+            takeFullpageScreenshot();
+            driver.quit();
+        }
     }
 
     @BeforeStep
@@ -37,4 +51,5 @@ public class hooks extends context.util{
         System.out.println("before step");
 
     }
+
 }

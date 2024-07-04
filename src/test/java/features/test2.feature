@@ -1,7 +1,7 @@
 Feature: Gmail login
-  @demo
-  Rule: group 2
 
+  Rule: group 2
+  @demo
   Scenario: Login to Gmail and land on home page
     Given Open "https://www.google.com/" URL
     Then click on search

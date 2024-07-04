@@ -1,12 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: Gmail login
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 18.30 s <<< FAILURE! -- in Gmail login
-Gmail login.Login to Gmail and land on home page -- Time elapsed: 13.13 s <<< ERROR!
-java.lang.IllegalStateException: You can not use Scenario.log or Scenario.attach when a step is not being executed
-	at io.cucumber.core.runner.TestCaseState.requireActiveTestStep(TestCaseState.java:157)
-	at io.cucumber.core.runner.TestCaseState.log(TestCaseState.java:106)
-	at io.cucumber.java.Scenario.log(Scenario.java:100)
-	at stepdefinition.GmailLoginSD.click_search(GmailLoginSD.java:20)
+Tests run: 2, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 16.77 s <<< FAILURE! -- in Gmail login
+Gmail login.Login to Gmail and land on home page -- Time elapsed: 16.77 s <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at stepdefinition.GmailLoginSD.click_search(GmailLoginSD.java:31)
 	at ✽.click on search(file:///C:/Users/akarkare/Akshay/Personal/Automation/Selenium/NewProject/Selenium/SeleniumWithCucumber/src/test/java/features/test2.feature:7)
+
+Gmail login.Login to Gmail and land on home page -- Time elapsed: 0 s <<< ERROR!
+java.lang.ClassCastException: class org.openqa.selenium.chrome.ChromeDriver cannot be cast to class org.openqa.selenium.firefox.FirefoxDriver (org.openqa.selenium.chrome.ChromeDriver and org.openqa.selenium.firefox.FirefoxDriver are in unnamed module of loader 'app')
+	at context.util.takeFullpageScreenshot(util.java:57)
+	at stepdefinition.hooks.afterScenarioActions(hooks.java:44)
 

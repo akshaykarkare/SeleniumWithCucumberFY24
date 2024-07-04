@@ -77,7 +77,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>SeleniumAutomation</td>
         <td>1</td>
-      <td>04 Jul 2024, 10:17</td>
+      <td>04 Jul 2024, 11:16</td>
     </tr>
   </tbody>
 </table>
@@ -117,7 +117,7 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_1_2313444142.html">Gmail login</a>
+      <a href="report-feature_2313444142.html">Gmail login</a>
     </div>
 
 
@@ -127,7 +127,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">8.536</span>
+  <span class="lead-duration duration">14.109</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
@@ -165,7 +165,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">stepdefinition.hooks.beforeScenarioActions(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">4.439</span>
+  <span class="lead-duration duration">2.545</span>
 
           </div>
 
@@ -202,7 +202,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">Open &quot;<span class="argument">https://www.google.com/</span>&quot; URL</span>
 
-  <span class="lead-duration duration">8.530</span>
+  <span class="lead-duration duration">6.196</span>
 
 </div>
 
@@ -273,7 +273,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">click on search</span>
 
-  <span class="lead-duration duration">0.006</span>
+  <span class="lead-duration duration">7.913</span>
 
 </div>
 
@@ -298,7 +298,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">stepdefinition.hooks.beforeScenarioStepActions(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.002</span>
 
           </div>
 
@@ -317,14 +317,13 @@ $(document).ready(function() {
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#msg-7">
-          <a>java.lang.IllegalStateException:</a>
+          <a>java.lang.AssertionError</a>
       </div>
       <div id="msg-7" class="collapse collapsable-details ">
-        <pre>java.lang.IllegalStateException: You can not use Scenario.log or Scenario.attach when a step is not being executed
-	at io.cucumber.core.runner.TestCaseState.requireActiveTestStep(TestCaseState.java:157)
-	at io.cucumber.core.runner.TestCaseState.log(TestCaseState.java:106)
-	at io.cucumber.java.Scenario.log(Scenario.java:100)
-	at stepdefinition.GmailLoginSD.click_search(GmailLoginSD.java:20)
+        <pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at stepdefinition.GmailLoginSD.click_search(GmailLoginSD.java:31)
 	at &#10045;.click on search(file:///C:/Users/akarkare/Akshay/Personal/Automation/Selenium/NewProject/Selenium/SeleniumWithCucumber/src/test/java/features/test2.feature:7)
 </pre>
       </div>
@@ -336,7 +335,34 @@ $(document).ready(function() {
 
 
 
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-8">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-8" class="collapse collapsable-details " >
+          
+          <pre><p>Login to Gmail and land on home page ---storing output values</p></pre>
+        </div>
+      </div>
+  </div>
 
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-9" class="collapsable-control">
+      <a>Login to Gmail and land on home page</a>
+      <a href="embeddings/embedding_883676576.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-9" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_883676576.png">
+      </div>
+    </div>
+  </div>
+  </div>
 
 
 
@@ -356,7 +382,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-8">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-10">
 
 <div class="brief failed">
   <span class="keyword indention">Hooks</span>
@@ -368,7 +394,7 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-8" class="inner-level collapse collapsable-details  in ">
+    <div id="before-10" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
           <div class="brief skipped">
             <span class="keyword indention">Before</span>
@@ -408,9 +434,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-9">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-11">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -420,20 +446,46 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-9" class="inner-level collapse collapsable-details ">
+    <div id="after-11" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief failed">
             <span class="keyword indention">After</span>
               <span class="location name">stepdefinition.hooks.afterScenarioActions(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.005</span>
 
           </div>
 
 
 
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-12">
+          <a>Error message</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details  in ">
+        <pre>java.lang.ClassCastException: class org.openqa.selenium.chrome.ChromeDriver cannot be cast to class org.openqa.selenium.firefox.FirefoxDriver (org.openqa.selenium.chrome.ChromeDriver and org.openqa.selenium.firefox.FirefoxDriver are in unnamed module of loader 'app')
+	at context.util.takeFullpageScreenshot(util.java:57)
+	at stepdefinition.hooks.afterScenarioActions(hooks.java:44)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsable-control" data-target="#output-13">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-13" class="collapse collapsable-details  in "  aria-expanded="true" >
+          
+          <pre><p>Failed! Please find attached screenshot</p></pre>
+        </div>
+      </div>
+  </div>
 
 
         </div>
