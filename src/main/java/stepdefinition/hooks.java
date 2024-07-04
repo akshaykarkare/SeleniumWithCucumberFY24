@@ -41,7 +41,7 @@ public class hooks extends context.util{
         System.out.println("STATUS "+ scenario.getStatus());
         if (scenario.isFailed()){
             scenario.log("Failed! Please find attached screenshot");
-            takeFullpageScreenshot();
+            //takeScreenshot();
             driver.quit();
         }
     }

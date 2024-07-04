@@ -46,7 +46,7 @@ public class util {
         String strDate= formatter.format(date);
         System.out.println(strDate.substring(0,1));
 
-        String path = System.getProperty("user.dir")+"/screenshots/"+hooks.scenario.getName()+"_"+strDate.substring(0,2)+".png";
+        String path = System.getProperty("user.dir")+"/target/cucumber-reports/screenshots/"+hooks.scenario.getName()+"_"+strDate.substring(0,2)+".png";
         File DestFile=new File(path);
         //Copy file at destination
         FileUtils.copyFile(SrcFile, DestFile);
@@ -65,7 +65,7 @@ public class util {
         String strDate= formatter.format(date);
         System.out.println(strDate.substring(0,1));
 
-        String path = System.getProperty("user.dir")+"/screenshots/"+hooks.scenario.getName()+"_Full_page"+"_"+strDate.substring(0,2)+".png";
+        String path = System.getProperty("user.dir")+"/target/cucumber-reports/screenshots/"+hooks.scenario.getName()+"_Full_page"+"_"+strDate.substring(0,2)+".png";
         File DestFile=new File(path);
         //Copy file at destination
         FileUtils.copyFile(SrcFile, DestFile);
