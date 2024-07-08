@@ -16,7 +16,6 @@ public class GmailLoginSD extends context.util{
 
     public GmailLoginSD(TestContext context){
         super(context);
-
     }
 
     @Then("^click on search$")
@@ -24,11 +23,11 @@ public class GmailLoginSD extends context.util{
         hooks.scenario.log(hooks.scenario.getName() + " ---storing output values");
         System.out.println("click on google search");
         driver.switchTo().frame("callout");
-        click("//div[@class=\"kFwPee\"]//button");
+        click(locators.getProperty("GmailHomePageGmailPopUp"));
         driver.switchTo().defaultContent();
-        click("//a[text()='Gmail']");
-        takeScreenshot();
+        click(locators.getProperty("GmailHomePageGmailLink"));
+        //takeScreenshot();
+        takeFullpageScreenshot();
         fail();
     }
-
 }

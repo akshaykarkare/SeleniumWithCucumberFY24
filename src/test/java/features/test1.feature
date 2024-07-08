@@ -3,12 +3,13 @@ Feature: Kite and Groww login
   Rule: group 1
 
   Scenario: Login to Kite and land on home page
-    Given Open "https://kite.zerodha.com/" URL
+    Given Open "orangehrmUrl" URL
     #Then click on search
+    And quite
 
 
   Scenario: Login to Groww and land on home page
-    Given Open "https://groww.in/" URL
+    Given Open "growwUrl" URL
     #Then click on search
     #And quite
 

@@ -12,19 +12,28 @@ import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Properties;
 
 public class util {
 
     protected TestContext testContext;
     protected WebDriver driver;
+    protected Properties prop;
+    protected Properties locators;
 
     public util(TestContext context){
         testContext=context;
-        driver = testContext.getWebDriverManager().getDriver();
+        //get browser name on which automation needs to be executed
+        prop = testContext.getPropertyManager().getProp("config");
+        locators = testContext.getPropertyManager().getProp("locators");
+
+        //driver initialization
+        driver = testContext.getWebDriverManager().getDriver(prop.getProperty("browser"));
     }
 
-    public void openUrl(String url){
+    public void openUrl(String url) throws IOException {
        driver.get(url);
+       takeScreenshot();
     }
     public void click(String locator){
         driver.findElement(By.xpath(locator)).click();

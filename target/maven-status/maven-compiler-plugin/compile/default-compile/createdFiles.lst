@@ -4,5 +4,6 @@ context\WebDriverManager.class
 stepdefinition\GmailLoginSD.class
 stepdefinition\hooks.class
 stepdefinition\KiteLoginSD.class
+context\PropertyFileManager.class
 context\TestContext.class
 stepdefinition\commonSD.class

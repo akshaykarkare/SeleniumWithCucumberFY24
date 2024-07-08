@@ -8,6 +8,8 @@ import io.cucumber.java.en.Then;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import java.io.IOException;
+
 public class commonSD extends context.util{
 
     public commonSD(TestContext context){
@@ -15,10 +17,11 @@ public class commonSD extends context.util{
     }
 
     @Given("^Open \"([^\"]*)\" URL$")
-    public void open_url(String url){
+    public void open_url(String url) throws IOException {
+        System.out.println("-------------------------STEP INIT-----------------");
         hooks.scenario.log(hooks.scenario.getName() + " ---storing output values");
         System.out.println(url + Thread.currentThread().getId());
-        openUrl(url);
+        openUrl(prop.getProperty(url));
     }
 
     @And("^quite$")

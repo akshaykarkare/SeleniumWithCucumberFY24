@@ -25,7 +25,7 @@ public class hooks extends context.util{
     }
 
     @Before
-    public void beforeScenarioActions(Scenario scenario){
+    public void prerequisite(Scenario scenario){
         this.scenario=scenario;
         System.out.println("before scenario");
         System.out.println(scenario.getName());
@@ -35,7 +35,7 @@ public class hooks extends context.util{
     }
 
     @After
-    public void afterScenarioActions(Scenario scenario) throws IOException {
+    public void tearDown(Scenario scenario) throws IOException {
         System.out.println("after scenario");
         System.out.println(scenario.getName());
         System.out.println("STATUS "+ scenario.getStatus());
