@@ -14,4 +14,4 @@ COPY . .
 RUN mvn clean package -DskipTests
 
 # Command to run the Selenium tests (adjust accordingly)
-CMD ["mvn", "test"]
+CMD ["mvn", "install"]

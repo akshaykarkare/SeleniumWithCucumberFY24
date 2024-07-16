@@ -1,8 +1,8 @@
 Feature: Gmail login
 
-
-  Rule: group 2
   @demo
+  Rule: group 2
+
   Scenario Outline: Login to Gmail and land on home page
     Given Open "<URL>" URL
     Then click on search

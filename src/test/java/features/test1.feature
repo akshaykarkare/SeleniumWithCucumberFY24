@@ -1,5 +1,6 @@
 Feature: Kite and Groww login
 
+  @demo
   Rule: group 1
 
   Scenario: Login to Kite and land on home page

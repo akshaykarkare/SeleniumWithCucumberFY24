@@ -36,6 +36,8 @@ public class SendMail {
             Message message = new MimeMessage(session);
             message.setFrom(new InternetAddress("akshay.karkare@gmail.com"));
             message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("akshay.karkare@gmail.com"));
+            //message.setRecipients(Message.RecipientType.CC, InternetAddress.parse("meetshriyash@gmail.com"));
+
             message.setSubject("UI Automation Report");
             message.setText("Please refer to the AutomationExtentOrSparkReport.html for the test results");
 
