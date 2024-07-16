@@ -15,6 +15,13 @@
 
 
   <dependencies>
+    <!-- https://mvnrepository.com/artifact/javax.mail/mail -->
+    <dependency>
+      <groupId>javax.mail</groupId>
+      <artifactId>mail</artifactId>
+      <version>1.4.7</version>
+    </dependency>
+
     <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
     <dependency>
       <groupId>io.cucumber</groupId>
@@ -154,6 +161,23 @@
           </execution>
         </executions>
       </plugin>
+      <!--send email-->
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.6.0</version>
+        <executions>
+          <execution>
+            <id>first-execution</id>
+            <phase>install</phase>
+            <goals><goal>java</goal></goals>
+            <configuration>
+              <mainClass>context.SendMail</mainClass>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
     </plugins>
   </build>
 </project>

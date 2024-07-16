@@ -26,8 +26,6 @@ public class GmailLoginSD extends context.util{
         click(locators.getProperty("GmailHomePageGmailPopUp"));
         driver.switchTo().defaultContent();
         click(locators.getProperty("GmailHomePageGmailLink"));
-        //takeScreenshot();
-        takeFullpageScreenshot();
         fail();
     }
 }

@@ -1,20 +1,26 @@
 package stepdefinition;
 
 import context.TestContext;
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
-import io.cucumber.java.BeforeStep;
-import io.cucumber.java.Scenario;
+import io.cucumber.java.*;
 import io.cucumber.plugin.event.Step;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
+import javax.activation.DataHandler;
+import javax.activation.DataSource;
+import javax.activation.FileDataSource;
+import javax.mail.*;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeBodyPart;
+import javax.mail.internet.MimeMessage;
+import javax.mail.internet.MimeMultipart;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Properties;
 
 public class hooks extends context.util{
 
@@ -41,7 +47,7 @@ public class hooks extends context.util{
         System.out.println("STATUS "+ scenario.getStatus());
         if (scenario.isFailed()){
             scenario.log("Failed! Please find attached screenshot");
-            //takeScreenshot();
+            takeScreenshot();
             driver.quit();
         }
     }
@@ -51,5 +57,4 @@ public class hooks extends context.util{
         System.out.println("before step");
 
     }
-
 }

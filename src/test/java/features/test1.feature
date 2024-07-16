@@ -11,6 +11,6 @@ Feature: Kite and Groww login
   Scenario: Login to Groww and land on home page
     Given Open "growwUrl" URL
     #Then click on search
-    #And quite
+    And quite
 
 

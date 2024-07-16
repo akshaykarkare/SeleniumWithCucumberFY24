@@ -1,0 +1,16 @@
+version: '2.20.2'
+
+services:
+  chrome:
+    image: selenium/standalone-chrome:latest
+    hostname: seleniumchrome
+    ports:
+      - "7900:7900"
+      - "4444:4444"
+    privileged: true
+    shm_size: 2g
+
+  project-selenium-docker:
+    image: akarkare/selenium-docker:latest
+
+
