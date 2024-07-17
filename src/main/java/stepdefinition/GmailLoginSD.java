@@ -19,8 +19,8 @@ public class GmailLoginSD extends context.util{
     }
 
     @Then("^click on search$")
-    public void click_search() throws IOException {
-        hooks.scenario.log(hooks.scenario.getName() + " ---storing output values");
+    public void click_search() throws IOException, InterruptedException {
+        //hooks.scenario.log(hooks.scenario.getName() + " ---storing output values");
         System.out.println("click on google search");
         driver.switchTo().frame("callout");
         click(locators.getProperty("GmailHomePageGmailPopUp"));

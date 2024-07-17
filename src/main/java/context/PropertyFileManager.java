@@ -14,7 +14,7 @@ public class PropertyFileManager {
         prop = new Properties();
         switch (propType){
             case "config":
-                filePath = filePath+"/src/main/resources/config.properties";
+                filePath = filePath+"/config/config.properties";
                 break;
             case "locators":
                 filePath = filePath+"/src/main/resources/locators/locators.properties";

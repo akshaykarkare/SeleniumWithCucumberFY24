@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="Gmail login" time="36.016" tests="2" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="Kite and Groww login" time="34.248" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -64,34 +64,29 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="Login to Gmail and land on home page" classname="Gmail login" time="23.212">
-    <failure type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.fail(Assert.java:95)
-	at stepdefinition.GmailLoginSD.click_search(GmailLoginSD.java:29)
-	at ✽.click on search(file:///C:/Users/akarkare/Akshay/Personal/Automation/Selenium/NewProject/Selenium/SeleniumWithCucumber/src/test/java/features/test2.feature:8)
-]]></failure>
+  <testcase name="Login to Kite and land on home page" classname="Kite and Groww login" time="19.42">
     <system-out><![CDATA[before scenario
-Login to Gmail and land on home page
+Login to Kite and land on home page
 TAGS : [@demo]
 before step
 -------------------------STEP INIT-----------------
-gmailUrl18
+orangehrmUrl17
 before step
-click on google search
 after scenario
-Login to Gmail and land on home page
-STATUS FAILED
-inside failed case-----
+Login to Kite and land on home page
+STATUS PASSED
 ]]></system-out>
+    <system-err><![CDATA[Jul 17, 2024 12:01:22 PM org.openqa.selenium.remote.tracing.opentelemetry.OpenTelemetryTracer createTracer
+INFO: Using OpenTelemetry for tracing
+]]></system-err>
   </testcase>
-  <testcase name="Login to Groww and land on home page" classname="Gmail login" time="12.804">
+  <testcase name="Login to Groww and land on home page" classname="Kite and Groww login" time="14.828">
     <system-out><![CDATA[before scenario
 Login to Groww and land on home page
 TAGS : [@demo]
 before step
 -------------------------STEP INIT-----------------
-growwUrl18
+growwUrl17
 before step
 after scenario
 Login to Groww and land on home page

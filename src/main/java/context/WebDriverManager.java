@@ -37,7 +37,8 @@ public class WebDriverManager {
                     ChromeOptions options = new ChromeOptions();
                     //options.addArguments("--headless=new");
                     try {
-                        driver = new RemoteWebDriver(new URL("http://seleniumchrome:4444"), options);
+                        //driver = new RemoteWebDriver(new URL("http://seleniumchrome:4444"), options);
+                        driver = new RemoteWebDriver(new URL("http://localhost:4444"), options);
                         //driver = new ChromeDriver();
                     }catch (Exception e){
                         System.out.println("unable to initialize remote webdriver with chrome");

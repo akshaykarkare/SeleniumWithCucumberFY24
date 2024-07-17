@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: Gmail login
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 22.59 s <<< FAILURE! -- in Gmail login
-Gmail login.Login to Gmail and land on home page -- Time elapsed: 22.59 s <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 36.02 s <<< FAILURE! -- in Gmail login
+Gmail login.Login to Gmail and land on home page -- Time elapsed: 23.21 s <<< FAILURE!
 java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:86)
 	at org.junit.Assert.fail(Assert.java:95)

@@ -12,7 +12,6 @@ Feature: Gmail login
     | gmailUrl|
 
 
-
   Scenario: Login to Groww and land on home page
     Given Open "growwUrl" URL
     And quite

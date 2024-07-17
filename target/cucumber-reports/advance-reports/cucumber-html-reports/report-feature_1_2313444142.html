@@ -41,10 +41,9 @@ $(document).ready(function() {
 
 
 
-<title>Cucumber Reports (no 1) - Failures Overview</title>
+<title>Cucumber Reports (no 1) - Feature: Gmail login</title>
 
 </head>
-
 <body>
 
 <nav class="navbar navbar-default navbar-fixed-top" id="navigation">
@@ -55,7 +54,7 @@ $(document).ready(function() {
         <li role="presentation" ><a href="overview-features.html">Features</a></li>
         <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
         <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
-        <li role="presentation"  class="active" ><a href="overview-failures.html">Failures</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
       </ul>
     </div>
   </div>
@@ -90,10 +89,67 @@ $(document).ready(function() {
 
 <div id="report-lead" class="container-fluid">
   <div class="col-md-10 col-md-offset-1">
-    <h2>Failures Overview</h2>
-      <p>The following summary displays scenarios that failed.</p>
+    <h2>Feature Report</h2>
   </div>
 </div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+    <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">Gmail login</td>
+          <td      class="passed"    >3</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >1</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">5</td>
+
+          <td  class="passed"    >1</td>
+          <td  class="failed"    >1</td>
+          <td class="total">2</td>
+
+          <td class="duration" data-value="19678478600">19.678</td>
+          <td class="failed">Failed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
 
 
 <div class="container-fluid">
@@ -111,14 +167,24 @@ $(document).ready(function() {
 <div class="container-fluid" id="report">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
 
-        <div class="elements">
+<div class="tags indention">
+</div>
+
+
+<div class="brief failed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">Gmail login</span>
+
+
+</div>
+
+        <div class="description indention"></div>
+
+        <div class="elements inner-level">
 
 <div class="element">
-    <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_1_2313444142.html">Gmail login</a>
-    </div>
 
 
 <div class="tags indention">
@@ -457,8 +523,259 @@ $(document).ready(function() {
   </div>
 </div>
 
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2209668642.html">@demo</a>
+</div>
+
+
+  <span class="lead-duration duration">4.888</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Login to Groww and land on home page</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-11" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-12">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-12" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepdefinition.hooks.prerequisite(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">7.906</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-13">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-13" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Open &quot;<span class="argument">growwUrl</span>&quot; URL</span>
+
+  <span class="lead-duration duration">3.023</span>
+
+</div>
+
+
+
+  <div class="inner-level hooks-step-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-14">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-14" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepdefinition.hooks.beforeScenarioStepActions(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <div class="outputs inner-level">
+      <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-15">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-15" class="collapse collapsable-details " >
+          
+          <pre><p>Login to Groww and land on home page ---storing output values</p></pre>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">quite</span>
+
+  <span class="lead-duration duration">1.864</span>
+
+</div>
+
+
+
+  <div class="inner-level hooks-step-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-16">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-16" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">stepdefinition.hooks.beforeScenarioStepActions(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-17">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-17" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">stepdefinition.hooks.tearDown(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
         </div>
 
+      </div>
     </div>
   </div>
 </div>

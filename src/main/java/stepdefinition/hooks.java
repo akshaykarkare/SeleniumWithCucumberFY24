@@ -37,17 +37,18 @@ public class hooks extends context.util{
         System.out.println(scenario.getName());
         System.out.println("TAGS : "+ scenario.getSourceTagNames());
         //scenario.log(scenario.getSourceTagNames().toString());
-
     }
 
     @After
-    public void tearDown(Scenario scenario) throws IOException {
+    public void tearDown(Scenario scenario) throws IOException, InterruptedException {
+        this.scenario=scenario;
         System.out.println("after scenario");
         System.out.println(scenario.getName());
         System.out.println("STATUS "+ scenario.getStatus());
         if (scenario.isFailed()){
-            scenario.log("Failed! Please find attached screenshot");
-            takeScreenshot();
+            System.out.println("inside failed case-----");
+            hooks.scenario.log("Please find below failed assertion's screenshot");
+            hooks.scenario.attach(((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES),"image/png",hooks.scenario.getName());
             driver.quit();
         }
     }
